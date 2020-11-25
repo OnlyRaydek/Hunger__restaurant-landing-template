@@ -43,19 +43,25 @@
 }
 /* each slide backgound color */  
 .slide1 {
-  background: url("../images/specialty-bg.jpg") #00bcd7 no-repeat;
+  background: repeating-linear-gradient(90deg, $edge-color,
+  transparent 2px, transparent 20%, transparent 25%),
+    url("../images/specialty-bg.jpg") no-repeat;
   background-size: cover;
   left: 0;
 }
 
 .slide2 {
-  background: url("../images/specialty-bg.jpg") #009788 no-repeat;
+  background: repeating-linear-gradient(90deg, $edge-color,
+  transparent 2px, transparent 20%, transparent 25%),
+    url("../images/specialty-bg.jpg") no-repeat;
   background-size: cover;
   left: 100%;
 }
 
 .slide3 {
-  background: url("../images/specialty-bg.jpg") #ff5608 no-repeat;
+  background: repeating-linear-gradient(90deg, $edge-color,
+  transparent 2px, transparent 20%, transparent 25%),
+    url("../images/specialty-bg.jpg") no-repeat;
   background-size: cover;
   left: 200%;
 }

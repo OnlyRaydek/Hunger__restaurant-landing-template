@@ -1,6 +1,24 @@
 @import "utils";
 @import "fonts";
-@import "typography";
+
+@import "page.scss";
+@import "header";
+@import "button";
+@import "about";
+@import "form";
+@import "specialties";
+@import "carousel";
+@import "delicious";
+@import "footer";
+@import "events";
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: inherit;
+  vertical-align: baseline;
+}
 
 body {
   background: $c-gray;

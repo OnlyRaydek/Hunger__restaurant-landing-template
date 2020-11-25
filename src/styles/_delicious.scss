@@ -1,0 +1,149 @@
+.delicious {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    max-width: 526px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__topic {
+    position: relative;
+    margin: auto;
+    margin-top: 67px;
+    font-family: "Banny", sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 44px;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 56px;
+      height: 5px;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: $text-color-yellow;
+      border-radius: 46px;
+      z-index: 1;
+    }
+
+    @media screen and (max-width: 425px) {
+      margin-top: 50px;
+      font-size: 20px;
+
+      &::after {
+        width: 36px;
+        height: 3px;
+        bottom: -10px;
+      }
+    }
+  }
+
+  &__text {
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 26px;
+
+    @media screen and (max-width: 425px) {
+      margin-top: 20px;
+      padding: 0 10px;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  &__navigation {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 46px;
+
+    @media screen and (max-width: 425px) {
+      margin: 23px 10px 10px;
+    }
+  }
+
+  &__category {
+    max-width: 110px;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 16px;
+    text-transform: uppercase;
+    transition: color 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      color: $text-color-yellow;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid $edge-color-darker;
+    }
+
+    @media screen and (max-width: 425px) {
+      max-width: 80px;
+      padding: 10px 8px;
+      font-size: 8px;
+      line-height: 12px;
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 47px 20px 75px;
+
+    &-item {
+      padding-bottom: 30px;
+    }
+
+    &-text {
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 16px;
+      color: rgba(51, 51, 51, 0.5);
+    }
+
+    &-text-bold {
+      font-family: "Banny", sans-serif;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 1px;
+    }
+
+    @media screen and (max-width: 425px) {
+      padding: 30px 15px;
+
+      &-item {
+        padding-bottom: 20px;
+      }
+
+      &-text {
+        font-size: 8px;
+        line-height: 12px;
+      }
+
+      &-text-bold {
+        font-size: 8px;
+        letter-spacing: 0;
+      }
+    }
+  }
+}

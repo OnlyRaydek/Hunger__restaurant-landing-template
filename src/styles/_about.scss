@@ -8,24 +8,30 @@
   }
 
   &__image {
-    position: relative;
     width: 50%;
+    margin-top: 30px;
+    padding-left: 25px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 210px;
-      height: 210px;
-      right: -10%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+    & > div {
+      position: relative;
+      max-width: 538px;
 
-      border: 19px solid #e8c300;
-      box-sizing: border-box;
-      filter: drop-shadow(0 0 93px rgba(0, 0, 0, 0.5));
-      border-radius: 5px;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 210px;
+        height: 210px;
+        right: -10%;
+        top: 50%;
+        transform: translate(0, -50%);
 
-      z-index: 1;
+        border: 19px solid #e8c300;
+        box-sizing: border-box;
+        filter: drop-shadow(0 0 93px rgba(0, 0, 0, 0.5));
+        border-radius: 5px;
+
+        z-index: 1;
+      }
     }
   }
 

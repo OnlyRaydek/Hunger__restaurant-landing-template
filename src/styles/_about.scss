@@ -1,5 +1,5 @@
 .about {
-  height: 500px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
 
@@ -9,7 +9,6 @@
 
   &__image {
     width: 50%;
-    margin-top: 30px;
     padding-left: 25px;
 
     & > div {

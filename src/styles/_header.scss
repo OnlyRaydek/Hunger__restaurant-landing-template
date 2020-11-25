@@ -182,7 +182,6 @@
     transition: box-shadow 0.5s;
 
     &:hover {
-      cursor: pointer;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
     }
   }
@@ -268,9 +267,10 @@
     height: 56px;
     margin-left: auto;
     margin-right: 74px;
-    font-size: 18px;
     border: 1px solid $edge-color;
     border-radius: 50%;
+    font-size: 18px;
+    color: $text-color-white;
     transition: color 0.5s, border-color 0.5s;
 
     &:not(:first-child) {

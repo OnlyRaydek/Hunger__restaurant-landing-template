@@ -7,4 +7,8 @@
   border: 1px solid #fff;
   color: $text-color-white;
   border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

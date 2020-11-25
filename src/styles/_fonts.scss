@@ -1,6 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-family: "Banny";
+  src: url("../fonts/banny-cufonfonts-webfont/Banny-Round.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Banny Light";
+  src: url("../fonts/banny-cufonfonts-webfont/Banny-LightRound.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Banny Bold";
+  src: url("../fonts/banny-cufonfonts-webfont/Banny-BoldRound.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

@@ -33,6 +33,17 @@
       border-radius: 46px;
       z-index: 1;
     }
+
+    @media screen and (max-width: 425px) {
+      margin-top: 50px;
+      font-size: 20px;
+
+      &::after {
+        width: 36px;
+        height: 3px;
+        bottom: -10px;
+      }
+    }
   }
 
   &__text {
@@ -41,16 +52,28 @@
     font-weight: 700;
     text-align: center;
     line-height: 26px;
+
+    @media screen and (max-width: 425px) {
+      margin-top: 20px;
+      padding: 0 10px;
+      font-size: 12px;
+      line-height: 20px;
+    }
   }
 
   &__navigation {
     width: 100%;
+    padding: 0 10px;
   }
 
   &__list {
     display: flex;
     justify-content: center;
     margin-top: 46px;
+
+    @media screen and (max-width: 425px) {
+      margin: 23px 10px 10px;
+    }
   }
 
   &__category {
@@ -71,6 +94,13 @@
 
     &:not(:last-child) {
       border-right: 1px solid $edge-color-darker;
+    }
+
+    @media screen and (max-width: 425px) {
+      max-width: 80px;
+      padding: 10px 8px;
+      font-size: 8px;
+      line-height: 12px;
     }
   }
 
@@ -96,6 +126,24 @@
       font-size: 16px;
       line-height: 16px;
       letter-spacing: 1px;
+    }
+
+    @media screen and (max-width: 425px) {
+      padding: 30px 15px;
+
+      &-item {
+        padding-bottom: 20px;
+      }
+
+      &-text {
+        font-size: 8px;
+        line-height: 12px;
+      }
+
+      &-text-bold {
+        font-size: 8px;
+        letter-spacing: 0;
+      }
     }
   }
 }

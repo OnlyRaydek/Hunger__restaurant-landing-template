@@ -6,6 +6,11 @@
   &__form {
     width: 46%;
     margin-left: 20px;
+
+    @media screen and (max-width: 425px) {
+      width: auto;
+      margin-right: 20px;
+    }
   }
 
   &__image {
@@ -24,13 +29,21 @@
         right: -10%;
         top: 50%;
         transform: translate(0, -50%);
-
         border: 19px solid #e8c300;
         box-sizing: border-box;
         filter: drop-shadow(0 0 93px rgba(0, 0, 0, 0.5));
         border-radius: 5px;
-
         z-index: 1;
+      }
+
+      @media screen and (max-width: 425px) {
+        &::after {
+          width: 80px;
+          height: 80px;
+          right: 0%;
+          transform: translate(0, -50%);
+          border: 8px solid #e8c300;
+        }
       }
     }
 

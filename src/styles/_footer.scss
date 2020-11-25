@@ -24,10 +24,15 @@
     text-align: center;
     color: $text-color-white;
     opacity: 0.5;
+
+    @media screen and (max-width: 425px) {
+      margin-top: 40px;
+    }
   }
 
   @media screen and (max-width: 972px) {
-    height: 1000px;
-    margin-top: 150px;
+    margin-top: 40px;
+    padding: 0 10px;
+    font-size: 8px;
   }
 }

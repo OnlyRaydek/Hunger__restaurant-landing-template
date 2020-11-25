@@ -17,14 +17,6 @@
   top: 0;
   opacity: 1;
   z-index: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  -webkit-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
   -webkit-transition: -webkit-transform 1600ms;
   transition: -webkit-transform 1600ms, transform 1600ms;
   -webkit-transform: scale(1);
@@ -70,32 +62,10 @@
   text-align: center;
 }
 /* Slider inner slide effect */
-.slider h2 {
-  color: rgb(255, 255, 255);
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 45px;
-  line-height: 120%;
-  opacity: 0;
-  -webkit-transform: translateX(500px);
-  transform: translateX(500px);
-}
 
-.slider .button {
-  color: rgb(255, 255, 255);
-  padding: 5px 30px;
-  background: rgba(255,255,255,0.3);
-  text-decoration: none;
-  opacity: 0;
-  font-size: 15px;
-  line-height: 30px;
-  display: inline-block;
-  -webkit-transform: translateX(-500px);
-  transform: translateX(-500px);
-}
-
-.slider h2,
-.slider .button {
+.slider .specialties__topic,
+.slider .button,
+.slider .specialties__item {
   -webkit-transition: opacity 800ms, -webkit-transform 800ms;
   transition: transform 800ms, opacity 800ms;
   -webkit-transition-delay: 1s; /* Safari */
@@ -182,27 +152,19 @@
 .slide-radio1:checked ~ .slide1 h2,
 .slide-radio2:checked ~ .slide2 h2,
 .slide-radio3:checked ~ .slide3 h2,
-.slide-radio4:checked ~ .slide4 h2,
-.slide-radio1:checked ~ .slide1 .button,
-.slide-radio2:checked ~ .slide2 .button,
-.slide-radio3:checked ~ .slide3 .button,
-.slide-radio4:checked ~ .slide4 .button {
+.slide-radio1:checked ~ .slide1 .specialties__item,
+.slide-radio2:checked ~ .slide2 .specialties__item,
+.slide-radio3:checked ~ .slide3 .specialties__item {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;
 }
 
 @media only screen and (max-width: 767px) {
-  .slider h2 {
-    font-size: 20px;
-  }
   .slider > div {
     padding: 0 2%;
   }
   .control label {
     font-size: 35px;
-  }
-  .slider .button {
-    padding: 0 15px;
   }
 }

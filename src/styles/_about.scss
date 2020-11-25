@@ -33,6 +33,11 @@
         z-index: 1;
       }
     }
+
+    @media screen and (max-width: 972px) {
+      width: auto;
+      margin-top: 40px;
+    }
   }
 
   &__contacts {
@@ -44,5 +49,14 @@
     &-bold {
       font-weight: 700;
     }
+
+    @media screen and (max-width: 1070px) {
+      padding-top: 50px;
+    }
+  }
+
+  @media screen and (max-width: 972px) {
+    flex-direction: column;
+    align-items: center;
   }
 }

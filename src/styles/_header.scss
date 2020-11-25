@@ -69,6 +69,20 @@
         margin-right: 52px;
       }
     }
+
+    @media screen and (max-width: 972px) {
+      flex-direction: column;
+      height: 150px;
+      padding: 0;
+
+      &:first-child {
+        margin-left: 0;
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   &__main {
@@ -100,7 +114,7 @@
 
   &__timer {
     position: absolute;
-    top: 18px;
+    top: 70px;
     left: 0;
     max-width: 240px;
     width: 100%;
@@ -111,6 +125,12 @@
     text-align: center;
     color: $text-color-white;
     background-color: rgba(196, 196, 196, 0.3);
+    
+    @media screen and (max-width: 972px) {
+      max-width: 120px;
+      padding: 7px 0;
+      font-size: 20px;
+    }
   }
 
   &__topic {
@@ -193,6 +213,10 @@
     &:hover {
       border: 1px solid transparent;
       background-color: $text-color-yellow;
+    }
+
+    @media screen and (max-width: 1012px) {
+      margin-top: 40px;
     }
   }
 

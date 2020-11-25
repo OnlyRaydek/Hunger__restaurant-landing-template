@@ -1,0 +1,102 @@
+.delicious {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    max-width: 526px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__topic {
+    position: relative;
+    margin: auto;
+    margin-top: 67px;
+    font-family: "Banny", sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 44px;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 56px;
+      height: 5px;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: $text-color-yellow;
+      border-radius: 46px;
+      z-index: 1;
+    }
+  }
+
+  &__text {
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 26px;
+  }
+
+  &__navigation {
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 46px;
+  }
+
+  &__category {
+    max-width: 110px;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 16px;
+    text-transform: uppercase;
+    transition: color 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      color: $text-color-yellow;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid $edge-color-darker;
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 47px;
+
+    &-item {
+      padding-bottom: 30px;
+    }
+
+    &-text {
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 16px;
+      color: rgba(51, 51, 51, 0.5);
+    }
+
+    &-text-bold {
+      font-family: "Banny", sans-serif;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 1px;
+    }
+  }
+}
